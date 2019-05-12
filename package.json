@@ -1,0 +1,20 @@
+{
+  "name": "custom-array",
+  "version": "1.0.0",
+  "description": "Custom Array Like DataStructure with custom methods and allows to register Events",
+  "main": "lin/customArray.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src -d ./lib && node --inspect-brk ./lib/importLib.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
