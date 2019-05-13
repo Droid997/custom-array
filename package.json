@@ -1,14 +1,34 @@
 {
   "name": "custom-array",
   "version": "1.0.0",
-  "description": "Custom Array Like DataStructure with custom methods and allows to register Events",
+  "description": "Array DataStructure with custom methods and allows to register callbacks",
   "main": "lin/customArray.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./src -d ./lib && node --inspect-brk ./lib/importLib.js"
+    "build": "babel ./src -d ./lib && node --inspect-brk ./lib/importLib.js",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Droid997/custom-array"
+  },
+  "bugs": {
+    "url": "https://github.com/Droid997/custom-array/issues"
+  },
+  "homepage": "https://github.com/Droid997/custom-array#readme",
+  "keywords": [
+    "custom-array",
+    "array-register-event",
+    "array-register-callbacks",
+    "array-insert",
+    "array-remove",
+    "array-initialize",
+    "array-observe",
+    "array-extend",
+    "array-custom",
+    "array-custom-methods"
+  ],
+  "author": "Dishanth",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
