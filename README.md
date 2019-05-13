@@ -21,8 +21,8 @@ var arr =  new customArray(5,1);
 // arr => [1,1,1,1,1]
 ```
 ### parameters
-> size | optional, default = 0
-> value | optional
+> size | optional, default = 0;
+> value | optional;
 ### returns
 > array =[]
 ## Custom Methods
