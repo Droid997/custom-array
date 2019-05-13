@@ -222,15 +222,15 @@ arr.registerEvent('push',function(array,element){
 arr.push(2);
 arr.unregisterEvent("push")
 ```
-[ initialize ]: <https://github.com/Droid997/KickassTorrent-API#initialize>
-[ extend ]: <https://github.com/Droid997/KickassTorrent-API#extend>
-[ reduceSize ]: <https://github.com/Droid997/KickassTorrent-API#reduceSize>
-[ clear ]: <https://github.com/Droid997/KickassTorrent-API#clear> 
-[ valueAt ]: <https://github.com/Droid997/KickassTorrent-API#valueAt> 
-[ insertAt ]: <https://github.com/Droid997/KickassTorrent-API#insertAt> 
-[ remove ]: <https://github.com/Droid997/KickassTorrent-API#remove> 
-[ observe ]: <https://github.com/Droid997/KickassTorrent-API#observe> 
-[ unobserve ]: <https://github.com/Droid997/KickassTorrent-API#unobserve> 
-[ registerEvent ]: <https://github.com/Droid997/KickassTorrent-API#registerEvent> 
-[ unregisterEvent ]: <https://github.com/Droid997/KickassTorrent-API#unregisterEvent> 
+[ initialize ]: <https://github.com/Droid997/custom-array#initialize>
+[ extend ]: <https://github.com/Droid997/custom-array-API#extend>
+[ reduceSize ]: <https://github.com/Droid997/custom-array-API#reduceSize>
+[ clear ]: <https://github.com/Droid997/custom-array-API#clear> 
+[ valueAt ]: <https://github.com/Droid997/custom-array-API#valueAt> 
+[ insertAt ]: <https://github.com/Droid997/custom-array-API#insertAt> 
+[ remove ]: <https://github.com/Droid997/custom-array-API#remove> 
+[ observe ]: <https://github.com/Droid997/custom-array-API#observe> 
+[ unobserve ]: <https://github.com/Droid997/custom-array-API#unobserve> 
+[ registerEvent ]: <https://github.com/Droid997/custom-array-API#registerEvent> 
+[ unregisterEvent ]: <https://github.com/Droid997/custom-array-API#unregisterEvent> 
  
