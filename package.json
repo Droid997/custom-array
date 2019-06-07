@@ -5,7 +5,7 @@
   "main": "lin/customArray.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./src -d ./lib && node --inspect-brk ./lib/importLib.js",
+    "build": "node --inspect-brk ./src/importLib.js",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -31,10 +31,8 @@
   "author": "Dishanth",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "express": "^4.16.4"
   },
   "dependencies": {
-    "express": "^4.16.4"
   }
 }

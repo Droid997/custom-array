@@ -26,6 +26,32 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+//*	Functions *//
+//	push
+//	pop
+//	shift
+//	unshift
+//	toString
+//	initialize
+//	extend
+// 	reduceSize
+//	clear
+//	valueAt
+//	insertAt
+//	remove
+//	fill
+//	sum
+//	replace
+//	copy
+//	count
+//	observe
+//	unobserve
+//	registerEvent
+//	unregisterEvent
+
+/**
+ * customArray &#x1F495; Extends Array &#x1F497;
+ */
 var customArray =
 /*#__PURE__*/
 function (_Array) {
@@ -46,6 +72,11 @@ function (_Array) {
     if (value) Array.prototype.fill.call(array, value);
     return _possibleConstructorReturn(_this, array);
   }
+  /**
+   * 
+   * @param  {...any} items - any
+   */
+
 
   _createClass(customArray, [{
     key: "push",
@@ -113,6 +144,11 @@ function (_Array) {
 
       return ele;
     }
+    /**
+     * 
+     * @param {*} seprater - any character to use as seperator 
+     */
+
   }, {
     key: "toString",
     value: function toString() {
@@ -121,6 +157,11 @@ function (_Array) {
       var joinedString = Array.prototype.join.call(array, seprater);
       return joinedString;
     }
+    /**
+     * 
+     * @param {*} value - any value for initializing the array 
+     */
+
   }, {
     key: "initialize",
     value: function initialize() {
@@ -129,22 +170,37 @@ function (_Array) {
       Array.prototype.fill.call(array, value);
       return array;
     }
+    /**
+     * 
+     * @param {*} length - the new length value
+     * @returns {*} array 
+     */
+
   }, {
     key: "extend",
     value: function extend() {
       var length = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.length;
       var array = this;
-      array.length = length;
+      if (typeof length == "number") throw "length should be a number";else array.length = length;
       return array;
     }
+    /**
+     * 
+     * @param {*} length - the new length value 
+     */
+
   }, {
     key: "reduceSize",
     value: function reduceSize() {
       var length = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.length;
       var array = this;
-      array.length = length;
+      if (typeof length == "number") throw "length should be a number";else array.length = length;
       return length;
     }
+    /**
+     * clears the array
+     */
+
   }, {
     key: "clear",
     value: function clear() {
@@ -152,6 +208,11 @@ function (_Array) {
       array.length = 0;
       return array;
     }
+    /**
+     * 
+     * @param {*} index - returns value at specified index 
+     */
+
   }, {
     key: "valueAt",
     value: function valueAt(index) {
@@ -163,6 +224,12 @@ function (_Array) {
         throw error;
       }
     }
+    /**
+     * 
+     * @param {*} index - starting index at which the element should be inserted  
+     * @param  {...any} items - array of items to be inserted
+     */
+
   }, {
     key: "insertAt",
     value: function insertAt() {
@@ -186,6 +253,12 @@ function (_Array) {
         throw error;
       }
     }
+    /**
+     * 
+     * @param {*} index - index at which the element should be removed  
+     * @param {*} count - number of elements to be removed starting from the index
+     */
+
   }, {
     key: "remove",
     value: function remove(index) {
@@ -201,6 +274,141 @@ function (_Array) {
         throw error;
       }
     }
+    /**
+     * 
+     * @param {*} value - value to be filled  
+     * @param {*} start - starting index 
+     * @param {*} end  - ending index
+     */
+
+  }, {
+    key: "fill",
+    value: function fill(value) {
+      var start = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+      var end = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : this.length;
+      var array = this;
+
+      try {
+        for (var i = start; i <= end; i++) {
+          array[i] = value;
+        }
+
+        return array;
+      } catch (error) {
+        throw error;
+      }
+    }
+    /**
+     *  @returns - sum of the numbers in the array 
+     */
+
+  }, {
+    key: "sum",
+    value: function sum() {
+      var array = this;
+
+      try {
+        var sum = 0;
+
+        for (var i = 0; i < array.length; i++) {
+          if (parseInt(array[i]) != "NaN") sum += parseInt(array[i]);
+        }
+
+        return sum;
+      } catch (error) {
+        throw error;
+      }
+    }
+    /**
+     * 
+     * @param {*} index - index at which the value should be replaced 
+     * @param {*} value - value to be replaced
+     */
+
+  }, {
+    key: "replace",
+    value: function replace() {
+      var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : undefined;
+      var value = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
+      var array = this;
+
+      try {
+        if (index && value) array[index] = value;
+        return array;
+      } catch (error) {
+        throw error;
+      }
+    }
+    /**
+     * 
+     * @param {*} from - from index 
+     * @param {*} to - to index
+     */
+
+  }, {
+    key: "copy",
+    value: function copy() {
+      var from = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+      var to = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.length;
+      var array = this;
+
+      try {
+        return array.slice(from, to);
+      } catch (error) {
+        throw error;
+      }
+    } // count(element) {
+    // 	let array = this;
+    // 	console.time("count");
+    // 	try {
+    // 		let count = 0;
+    // 		let firstIndex = array.indexOf(element);
+    // 		let lastIndex = array.lastIndexOf(element);
+    // 		if (firstIndex >= 0 && lastIndex >= 0) {
+    // 			if (firstIndex == lastIndex)
+    // 				count++;
+    // 			else {
+    // 				let _carray = array.slice(++firstIndex, --lastIndex);
+    // 				count+=2;
+    // 				while (_carray.indexOf(element) != -1) {
+    // 					firstIndex=_carray.indexOf(element);
+    // 					lastIndex = _carray.lastIndexOf(element);
+    // 					count++;
+    // 					_carray = _carray.slice(--firstIndex, lastIndex);
+    // 				}
+    // 			}
+    // 		}
+    // 		console.timeEnd("count");
+    // 		return count;
+    // 	} catch (error) {
+    // 		throw error;
+    // 	}
+    // }
+
+    /**
+     * 
+     * @param {*} element - element to find the count of 
+     */
+
+  }, {
+    key: "count",
+    value: function count(element) {
+      var array = this;
+      var count = 0;
+      var start = array.indexOf(element);
+      var end = array.lastIndexOf(element);
+
+      for (var i = start; i <= end; i++) {
+        if (array[i] == element) count++;
+      }
+
+      return count;
+    }
+    /**
+     * 
+     * @param {*} fn - function callback  
+     */
+
   }, {
     key: "observe",
     value: function observe(fn) {
@@ -208,13 +416,23 @@ function (_Array) {
       if (typeof fn == "function") array.__proto__.observe = fn;
       return array;
     }
+    /**
+     *  remove observe callback
+     */
+
   }, {
     key: "unobserve",
     value: function unobserve() {
       var array = this;
-      if (array.__proto__.observe) array.__proto__.observe = false;
+      if (array.__proto__.observe) array.__proto__.observe = undefined;
       return true;
     }
+    /**
+     * 
+     * @param {*} event - event type  
+     * @param {*} fn - function callback
+     */
+
   }, {
     key: "registerEvent",
     value: function registerEvent(event, fn) {
@@ -249,6 +467,11 @@ function (_Array) {
     }
   }, {
     key: "unregisterEvent",
+
+    /**
+     * 
+     * @param {*} event - event type 
+     */
     value: function unregisterEvent(event) {
       var array = this;
 
@@ -256,19 +479,19 @@ function (_Array) {
         if (!event) throw "Event Undefined";else {
           switch (event) {
             case "push":
-              array.__proto__.onPush = false;
+              array.__proto__.onPush = undefined;
               return true;
 
             case "pop":
-              array.__proto__.onPop = false;
+              array.__proto__.onPop = undefined;
               return true;
 
             case "shift":
-              array.__proto__.onShift = false;
+              array.__proto__.onShift = undefined;
               return true;
 
             case "unshift":
-              array.__proto__.onUnshift = false;
+              array.__proto__.onUnshift = undefined;
               return true;
 
             default:
@@ -283,5 +506,3 @@ function (_Array) {
 
   return customArray;
 }(_wrapNativeSuper(Array));
-
-module.exports = customArray;
