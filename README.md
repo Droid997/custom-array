@@ -523,34 +523,32 @@ count => 5
 
 [ initialize ]: <https://github.com/Droid997/custom-array#initialize>
 
-[ extend ]: <https://github.com/Droid997/custom-array#extend>
+[ extend ]: <https://github.com/Droid997/custom-array#extendnewlen>
 
-[ reduceSize ]: <https://github.com/Droid997/custom-array#reduceSize>
+[ reduceSize ]: <https://github.com/Droid997/custom-array#reducesizenewlen>
 
 [ clear ]: <https://github.com/Droid997/custom-array#clear>
 
-[ valueAt ]: <https://github.com/Droid997/custom-array#valueAt>
+[ valueAt ]: <https://github.com/Droid997/custom-array#valueatindex>
 
-[ insertAt ]: <https://github.com/Droid997/custom-array#insertAt>
+[ insertAt ]: <https://github.com/Droid997/custom-array#insertatindexitems>
 
-[ remove ]: <https://github.com/Droid997/custom-array#remove>
+[ remove ]: <https://github.com/Droid997/custom-array#removeindexcount>
 
-[ observe ]: <https://github.com/Droid997/custom-array#observe>
+[ observe ]: <https://github.com/Droid997/custom-array#observefn>
 
 [ unobserve ]: <https://github.com/Droid997/custom-array#unobserve>
 
-[ registerEvent ]: <https://github.com/Droid997/custom-array#registerEvent>
+[ registerEvent ]: <https://github.com/Droid997/custom-array#registereventeventfn>
 
-[ unregisterEvent ]: <https://github.com/Droid997/custom-array#unregisterEvent>
+[ unregisterEvent ]: <https://github.com/Droid997/custom-array#unregistereventevent>
 
-[ fill ]: <https://github.com/Droid997/custom-array#fill>
+[ fill ]: <https://github.com/Droid997/custom-array#fill--value-start-end->
 
-[ sum ]: <https://github.com/Droid997/custom-array#sum>
+[ sum ]: <https://github.com/Droid997/custom-array#sum->
 
-[ replace ]: <https://github.com/Droid997/custom-array#replace>
+[ replace ]: <https://github.com/Droid997/custom-array#replace-index-value>
 
-[ replace ]: <https://github.com/Droid997/custom-array#replace>
+[ copy ]: <https://github.com/Droid997/custom-array#copy-from-to>
 
-[ copy ]: <https://github.com/Droid997/custom-array#copy>
-
-[ count ]: <https://github.com/Droid997/custom-array#count>
+[ count ]: <https://github.com/Droid997/custom-array#count-element>
