@@ -523,34 +523,34 @@ count => 5
 
 [ initialize ]: <https://github.com/Droid997/custom-array#initialize>
 
-[ extend ]: <https://github.com/Droid997/custom-array-API#extend>
+[ extend ]: <https://github.com/Droid997/custom-array#extend>
 
-[ reduceSize ]: <https://github.com/Droid997/custom-array-API#reduceSize>
+[ reduceSize ]: <https://github.com/Droid997/custom-array#reduceSize>
 
-[ clear ]: <https://github.com/Droid997/custom-array-API#clear>
+[ clear ]: <https://github.com/Droid997/custom-array#clear>
 
-[ valueAt ]: <https://github.com/Droid997/custom-array-API#valueAt>
+[ valueAt ]: <https://github.com/Droid997/custom-array#valueAt>
 
-[ insertAt ]: <https://github.com/Droid997/custom-array-API#insertAt>
+[ insertAt ]: <https://github.com/Droid997/custom-array#insertAt>
 
-[ remove ]: <https://github.com/Droid997/custom-array-API#remove>
+[ remove ]: <https://github.com/Droid997/custom-array#remove>
 
-[ observe ]: <https://github.com/Droid997/custom-array-API#observe>
+[ observe ]: <https://github.com/Droid997/custom-array#observe>
 
-[ unobserve ]: <https://github.com/Droid997/custom-array-API#unobserve>
+[ unobserve ]: <https://github.com/Droid997/custom-array#unobserve>
 
-[ registerEvent ]: <https://github.com/Droid997/custom-array-API#registerEvent>
+[ registerEvent ]: <https://github.com/Droid997/custom-array#registerEvent>
 
-[ unregisterEvent ]: <https://github.com/Droid997/custom-array-API#unregisterEvent>
+[ unregisterEvent ]: <https://github.com/Droid997/custom-array#unregisterEvent>
 
-[ fill ]: <https://github.com/Droid997/custom-array-API#fill>
+[ fill ]: <https://github.com/Droid997/custom-array#fill>
 
-[ sum ]: <https://github.com/Droid997/custom-array-API#sum>
+[ sum ]: <https://github.com/Droid997/custom-array#sum>
 
-[ replace ]: <https://github.com/Droid997/custom-array-API#replace>
+[ replace ]: <https://github.com/Droid997/custom-array#replace>
 
-[ replace ]: <https://github.com/Droid997/custom-array-API#replace>
+[ replace ]: <https://github.com/Droid997/custom-array#replace>
 
-[ copy ]: <https://github.com/Droid997/custom-array-API#copy>
+[ copy ]: <https://github.com/Droid997/custom-array#copy>
 
-[ count ]: <https://github.com/Droid997/custom-array-API#count>
+[ count ]: <https://github.com/Droid997/custom-array#count>
