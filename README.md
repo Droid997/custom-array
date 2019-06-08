@@ -521,7 +521,7 @@ var count = arr.count(2);
 count => 5
 ```
 
-[ initialize ]: <https://github.com/Droid997/custom-array#initialize>
+[ initialize ]: <https://github.com/Droid997/custom-array#initializevalue>
 
 [ extend ]: <https://github.com/Droid997/custom-array#extendnewlen>
 
