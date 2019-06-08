@@ -1,11 +1,11 @@
 {
   "name": "custom-array",
   "version": "1.0.0",
-  "description": "Array DataStructure with custom methods and allows to register callbacks",
+  "description": "Array DataStructure with custom methods which allows to register callbacks",
   "main": "lin/customArray.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node --inspect-brk ./src/importLib.js",
+    "test": "Error 'not specified' ",
+    "build": "babel ./src -d ./lib",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -31,8 +31,8 @@
   "author": "Dishanth",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.16.4"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

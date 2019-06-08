@@ -279,6 +279,7 @@ function (_Array) {
      * @param {*} value - value to be filled  
      * @param {*} start - starting index 
      * @param {*} end  - ending index
+     * @returns  array
      */
 
   }, {
@@ -323,6 +324,7 @@ function (_Array) {
      * 
      * @param {*} index - index at which the value should be replaced 
      * @param {*} value - value to be replaced
+     * @returns array
      */
 
   }, {
@@ -343,6 +345,7 @@ function (_Array) {
      * 
      * @param {*} from - from index 
      * @param {*} to - to index
+     * @returns copied array
      */
 
   }, {
@@ -388,6 +391,7 @@ function (_Array) {
     /**
      * 
      * @param {*} element - element to find the count of 
+     * @returns count
      */
 
   }, {
@@ -506,3 +510,5 @@ function (_Array) {
 
   return customArray;
 }(_wrapNativeSuper(Array));
+
+module.exports = customArray;
