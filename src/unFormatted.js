@@ -146,7 +146,7 @@ class customArray extends Array {
 	 */
 	extend(length = this.length) {
 		let array = this;
-		if (!isNaN(length))
+		if (isNaN(length))
 			throw "length should be a number";
 		else
 			array.length = length;
@@ -160,7 +160,7 @@ class customArray extends Array {
 	 */
 	reduceSize(length = this.length) {
 		let array = this;
-		if (typeof length == "number")
+		if (isNaN(length))
 			throw "length should be a number";
 		else
 			array.length = length;
