@@ -12,13 +12,13 @@
 
 # Install
 
->npm install --save custom-array
+- Get the package through CDN
+> ```<script src="https://cdn.jsdelivr.net/gh/Droid997/custom-array@1.0/src/customArray.min.js"></script>```
 
 ## Initialize
 
+- It will be placed in the window object ```window.customArray```
 ```
-
-const customArray = require('custom-array');
 
 var arr = new customArray();
 
